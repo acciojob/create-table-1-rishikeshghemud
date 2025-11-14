@@ -1,6 +1,7 @@
 function insert_Row() {
     //Write your code here
 	const table = document.querySelector('#sampleTable');
+	const tbody = table.querySelector('tbody') || table;
 
     const tr = document.createElement('tr');
 
@@ -13,6 +14,6 @@ function insert_Row() {
     tr.appendChild(td1);
     tr.appendChild(td2);
 
-    table.insertBefore(tr, table.firstElementChild);
+    tbody.insertBefore(tr, tbody.firstElementChild);
 
 }
